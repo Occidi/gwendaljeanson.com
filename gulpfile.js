@@ -18,9 +18,6 @@ gulp.task('sass', function () {
     return gulp.src('sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('grayscale.css'))
-    .pipe(uncss({
-            html: ['index.html']
-        }))
     .pipe(nano())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('css'));
