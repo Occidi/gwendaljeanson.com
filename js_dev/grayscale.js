@@ -32,10 +32,16 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
+
 $(function()
 {
-    $("#projects .btn-circle").on("click",function()
+    var mesBoutons = $("#projects button");
+    var slidingContents =  $(".panel-content-more");
+    console.log(mesBoutons);
+    console.log(slidingContents);
+    
+    mesBoutons.on("click",function()
     {
-            $(".panel-content-more").slideToggle(500);
+            $(this).closest(slidingContents).slideToggle(500);
     });
 });
