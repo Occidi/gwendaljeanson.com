@@ -31,3 +31,11 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
+
+$(function()
+{
+    $("#projects .btn-circle").on("click",function()
+    {
+            $(".panel-content-more").slideToggle(500);
+    });
+});
