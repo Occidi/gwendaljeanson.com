@@ -46,7 +46,6 @@ $(function()
 $(function()
 {
     var allSpans = $(".changingSpan");
-    console.log(allSpans);
     var currentSpan = 0;
 
     function changeSpan()
