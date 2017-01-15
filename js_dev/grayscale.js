@@ -41,3 +41,29 @@ $(function()
             $(this).next(".panel-content-more").slideToggle(500);
     });
 });
+
+//rotate between title span
+$(function()
+{
+    var allSpans = $(".changingSpan");
+    console.log(allSpans);
+    var currentSpan = 0;
+
+    function changeSpan()
+    {
+        $(allSpans[currentSpan]).fadeOut(400, function()
+        {
+            if(currentSpan == allSpans.length -1)
+            {
+                currentSpan = 0;
+            }else
+            {
+                currentSpan ++;
+            }
+
+            $(allSpans[currentSpan]).fadeIn(400);
+        });
+    }
+
+    var spanTimer = setInterval(changeSpan,5000);
+});
