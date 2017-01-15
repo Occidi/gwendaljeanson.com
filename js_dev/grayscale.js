@@ -32,7 +32,7 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
-
+// Open more content panel
 $(function()
 {
     var mesBoutons = $("#projects button");
