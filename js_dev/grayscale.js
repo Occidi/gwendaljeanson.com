@@ -36,12 +36,8 @@ $('.navbar-collapse ul li a').click(function() {
 $(function()
 {
     var mesBoutons = $("#projects button");
-    var slidingContents =  $(".panel-content-more");
-    console.log(mesBoutons);
-    console.log(slidingContents);
-    
     mesBoutons.on("click",function()
     {
-            $(this).closest(slidingContents).slideToggle(500);
+            $(this).parent().next(".panel-content-more").slideToggle(500);
     });
 });
