@@ -64,5 +64,5 @@ $(function()
         });
     }
 
-    var spanTimer = setInterval(changeSpan,5000);
+    var spanTimer = setInterval(changeSpan,2500);
 });
