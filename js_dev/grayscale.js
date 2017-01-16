@@ -930,5 +930,5 @@ $(function()
 }())
 
 
-window.sr = ScrollReveal({ duration: 3500 });
-sr.reveal('.panel', 500);
+window.sr = ScrollReveal({ duration: 3000 });
+sr.reveal('.panel', 250);
