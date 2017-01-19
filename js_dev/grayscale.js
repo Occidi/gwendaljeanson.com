@@ -96,9 +96,9 @@ $(function()
   $("#myPopup").addClass("fadingIn");
   setTimeout(function()
   { 
-    popup.className = popup.className.replace("showpopuptext", "hidepopuptext");
     $("#myPopup").addClass("fadingOut").removeClass('fadingIn');
-  }, 3000);
+    $("#myPopup").removeClass('showpopuptext');
+    }, 3000);
   });
 });
 
