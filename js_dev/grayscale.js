@@ -82,9 +82,22 @@ $(function()
 {
   var boutonCopy = $("#copy");
   boutonCopy.click(function(){
-    myVar = $( "#mail" ).html();
-    myVar.select();
-    document.execCommand('copy');
+  myVar = $( "#mail" ).html();
+  myVar = myVar.toString();
+  // Create a dummy input to copy the string array inside it
+  var dummy = document.createElement("input");
+  // Add it to the document
+  document.body.appendChild(dummy);
+  // Set its ID
+  dummy.setAttribute("id", "dummy_id");
+  // Output the array into it  
+  document.getElementById("dummy_id").value=myVar;  
+  // Select it
+  dummy.select();
+  // Copy its contents
+  document.execCommand("copy");
+  // Remove it as its not needed anymore
+  document.body.removeChild(dummy);
   });
 });
 
