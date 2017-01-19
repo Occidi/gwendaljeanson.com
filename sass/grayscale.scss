@@ -474,6 +474,12 @@ display: none;
     border:none;
 }
 
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .popup .popuptext {
     visibility: hidden;
     width: 160px;
