@@ -506,6 +506,11 @@ display: none;
     -o-transition: opacity 1s ease-in;
     -ms-transition: opacity 1s ease-in;
     transition: opacity 1s ease-in;
+    -webkit-transition: visibility 1s ease-in;
+    -moz-transition: visibility 1s ease-in;
+    -o-transition: visibility 1s ease-in;
+    -ms-transition: visibility 1s ease-in;
+    transition: visibility 1s ease-in;
 }
 
 .showpopuptext {
