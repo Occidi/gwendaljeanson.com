@@ -91,13 +91,10 @@ $(function()
   // Remove it as its not needed anymore
   document.body.removeChild(dummy);
 
-  var popup = document.getElementById('myPopup');
-  popup.className = "showpopuptext";
-  $("#myPopup").addClass("fadingIn");
+  $("#myPopup").addClass("showpopuptext");
   setTimeout(function()
   { 
-    $("#myPopup").addClass("fadingOut").removeClass('fadingIn');
-    $("#myPopup").removeClass('showpopuptext');
+    $("#myPopup").addClass("hidepopuptext").removeClass('showpopuptext');
     }, 3000);
   });
 });

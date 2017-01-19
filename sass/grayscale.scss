@@ -514,15 +514,12 @@ display: none;
 }
 
 .showpopuptext {
-    visibility: visible!important;    
+    visibility: visible!important;
+    opacity: 1!important;    
 }
 
-.fadingIn
-{
-    opacity: 1!important;
+.hidepopuptext{
+    visibility: hidden!important;
+    opacity: 0!important;   
 }
 
-.fadingOut
-{
-    opacity: 0!important;
-}
