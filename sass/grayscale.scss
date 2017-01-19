@@ -500,10 +500,6 @@ display: none;
     -ms-flex-pack: justify;
     justify-content: space-between;
     border-radius: 24px;
-}
-
-.showpopuptext {
-    visibility: visible!important;    
     opacity: 0;
     -webkit-transition: opacity 2s ease-in;
     -moz-transition: opacity 2s ease-in;
@@ -512,10 +508,12 @@ display: none;
     transition: opacity 2s ease-in;
 }
 
+.showpopuptext {
+    visibility: visible!important;    
+}
+
 .hidepopuptext {
     visibility: hidden!important; 
-    animation: fadeOut 1s;
-    opacity: 0;
 }
 
 .fadingIn

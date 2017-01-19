@@ -93,11 +93,11 @@ $(function()
 
   var popup = document.getElementById('myPopup');
   popup.className = "showpopuptext";
-  $(".popup").addClass("fadingIn");
+  $("#myPopup").addClass("fadingIn");
   setTimeout(function()
   { 
     popup.className = popup.className.replace("showpopuptext", "hidepopuptext");
-    $(".popup").addClass("fadingOut").removeClass('fadingIn');
+    $("myPopup").addClass("fadingOut").removeClass('fadingIn');
   }, 3000);
   });
 });
