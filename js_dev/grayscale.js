@@ -81,15 +81,10 @@ $(function()
 $(function()
 {
   var boutonCopy = $("#copy");
-  console.log(boutonCopy);
   boutonCopy.click(function(){
-      $("#mail").select();
-      myVar = $( "#mail" ).html();
-      myVar2 = $( "#mail" ).text();
-      console.log(".html:"+myVar);
-      console.log(".text:"+myVar2);
-      console.log("select:"+boutonCopy);
-      document.execCommand('copy');
+    myVar = $( "#mail" ).html();
+    myVar.select();
+    document.execCommand('copy');
   });
 });
 
