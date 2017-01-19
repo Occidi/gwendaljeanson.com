@@ -91,7 +91,7 @@ $(function()
   // Remove it as its not needed anymore
   document.body.removeChild(dummy);
 
-  $("#myPopup").addClass("showpopuptext");
+  $("#myPopup").addClass("showpopuptext").removeClass('hidepopuptext');
   setTimeout(function()
   { 
     $("#myPopup").addClass("hidepopuptext").removeClass('showpopuptext');

@@ -501,16 +501,11 @@ display: none;
     justify-content: space-between;
     border-radius: 24px;
     opacity: 0;
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-    -webkit-transition: visibility 1s ease-in;
-    -moz-transition: visibility 1s ease-in;
-    -o-transition: visibility 1s ease-in;
-    -ms-transition: visibility 1s ease-in;
-    transition: visibility 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
 
 .showpopuptext {
