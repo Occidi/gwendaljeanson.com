@@ -90,8 +90,8 @@ $(function()
   document.execCommand("copy");
   // Remove it as its not needed anymore
   document.body.removeChild(dummy);
-
-  $("#myPopup").addClass("showpopuptext").removeClass('hidepopuptext');
+  $("#myPopup").removeClass('hidepopuptext');
+  $("#myPopup").addClass("showpopuptext");
   setTimeout(function()
   { 
     $("#myPopup").addClass("hidepopuptext").removeClass('showpopuptext');
