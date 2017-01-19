@@ -505,13 +505,13 @@ display: none;
 }
 
 .showpopuptext {
-    visibility: visible;
+    visibility: visible!important;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
 
 .hidepopuptext {
-    visibility: hidden;
+    visibility: hidden!important;
     -webkit-animation: fadeOut 1s;
     animation: fadeOut 1s
 }
