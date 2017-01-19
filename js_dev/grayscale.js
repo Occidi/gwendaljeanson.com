@@ -67,7 +67,13 @@ $(function()
     var spanTimer = setInterval(changeSpan,2500);
 });
 
-
+$(function()
+{
+  $(".fa-clipboard").click(function(){
+      $("#mail").select();
+      document.execCommand('copy');
+  });
+});
 /////    /////    /////    /////
 /////    /////    /////    /////
 /////    /////    /////    /////
