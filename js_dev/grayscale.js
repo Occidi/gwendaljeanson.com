@@ -67,12 +67,24 @@ $(function()
     var spanTimer = setInterval(changeSpan,2500);
 });
 
+
+// Open more content panel
 $(function()
 {
-  $("#copy").click(function(){
+    var mesBoutons = $("#projects button");
+    mesBoutons.click(function()
+    {
+            $(this).next(".panel-content-more").slideToggle(500);
+    });
+});
+
+$(function()
+{
+  var boutonCopy = $("#copy");
+  console.log(boutonCopy);
+  boutonCopy.click(function(){
       $("#mail").select();
-      var mail = $("#mail").select();
-      console.log(mail);
+      console.log(boutonCopy);
       document.execCommand('copy');
   });
 });
