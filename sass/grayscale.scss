@@ -474,7 +474,7 @@ display: none;
     border:none;
 }
 
-.popuptext {
+#myPopup {
     visibility: hidden;
     border-radius: 2px;
     top: 0;
@@ -504,13 +504,13 @@ display: none;
      border-radius: 24px;
 }
 
-.popup .showpopuptext {
+.showpopuptext {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
 
-.popup .hidepopuptext {
+.hidepopuptext {
     visibility: hidden;
     -webkit-animation: fadeOut 1s;
     animation: fadeOut 1s
