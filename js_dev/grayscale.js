@@ -69,11 +69,14 @@ $(function()
 
 $(function()
 {
-  $(".fa-clipboard").click(function(){
+  $("#copy").click(function(){
       $("#mail").select();
+      var mail = $("#mail").select();
+      console.log(mail);
       document.execCommand('copy');
   });
 });
+
 /////    /////    /////    /////
 /////    /////    /////    /////
 /////    /////    /////    /////
