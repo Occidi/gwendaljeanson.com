@@ -32,15 +32,7 @@ $('.navbar-collapse ul li a').click(function(){
     $('.navbar-toggle:visible').click();
 });
 
-// Open more content panel
-$(function()
-{
-    var mesBoutons = $("#projects button");
-    mesBoutons.click(function()
-    {
-            $(this).next(".panel-content-more").slideToggle(500);
-    });
-});
+
 
 //rotate between title span
 $(function()
