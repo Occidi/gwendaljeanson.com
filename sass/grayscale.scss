@@ -500,25 +500,39 @@ display: none;
     -ms-flex-pack: justify;
     justify-content: space-between;
     border-radius: 24px;
-     -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    -webkit-animation: fadeOut 1s;
-    animation: fadeOut 1s
+    animation: fadeIn 2s;
 }
 
 .showpopuptext {
     visibility: visible!important;
-     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
-    -webkit-animation: fadeOut 1s;
-    animation: fadeOut 1s
+
     
 }
 
 .hidepopuptext {
     visibility: hidden!important; 
-     -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    -webkit-animation: fadeOut 1s;
-    animation: fadeOut 1s
+    animation: fadeOut 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeOut {
+    from {opacity: 1;} 
+    to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity:0 ;}
 }
