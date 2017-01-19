@@ -92,8 +92,11 @@ $(function()
   document.body.removeChild(dummy);
 
   var popup = document.getElementById('myPopup');
-  popup.className = "show";
-  setTimeout(function(){ popup.className = popup.className.replace("show", ""); }, 3000);
+  popup.className = "showpopuptext";
+  setTimeout(function()
+  { 
+    popup.className = popup.className.replace("showpopuptext", "hidepopuptext"); 
+  }, 3000);
   });
 });
 
