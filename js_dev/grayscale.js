@@ -90,13 +90,13 @@ $(function()
   document.execCommand("copy");
   // Remove it as its not needed anymore
   document.body.removeChild(dummy);
+
+  var popup = document.getElementById('myPopup');
+  popup.className = "show";
+  setTimeout(function(){ popup.className = popup.className.replace("show", ""); }, 3000);
   });
 });
 
-function myFunction() {
-    var popup = document.getElementById('myPopup');
-    popup.classList.toggle('show');
-}
 
 /////    /////    /////    /////
 /////    /////    /////    /////
