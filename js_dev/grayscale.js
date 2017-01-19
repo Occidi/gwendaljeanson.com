@@ -84,7 +84,11 @@ $(function()
   console.log(boutonCopy);
   boutonCopy.click(function(){
       $("#mail").select();
-      console.log(boutonCopy);
+      myVar = $( "#mail" ).html();
+      myVar2 = $( "#mail" ).text();
+      console.log(".html:"+myVar);
+      console.log(".text:"+myVar2);
+      console.log("select:"+boutonCopy);
       document.execCommand('copy');
   });
 });
