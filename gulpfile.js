@@ -23,6 +23,16 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
+gulp.task('fa', function () {
+    return gulp.src('vendor/font-awesome/css/font-awesome.css')
+    .pipe(concat('font-awesome.css'))
+    .pipe(uncss({
+            html: ['index.html', 'https://occidi.github.io/gwendaljeanson.com/']
+        }))
+    .pipe(nano())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('vendor/font-awesome/css/'));
+});
 
 // Run everything
 gulp.task('watch',function()
