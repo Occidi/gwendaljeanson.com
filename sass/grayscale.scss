@@ -150,8 +150,8 @@ a {
     .brand-heading {
       font-size: 40px;
       color: $primary;
-      -webkit-animation: mainToAccentPulse 10s linear 0s infinite alternate;
-      animation: mainToAccentPulse 10s linear 0s infinite alternate;
+      -webkit-animation: mainToAccentPulse 5s ease-out 0s infinite;
+      animation: mainToAccentPulse 5s ease-out 0s infinite;
     }
     .intro-text {
       font-size: 18px;
@@ -163,8 +163,8 @@ a {
       .brand-heading {
         font-size: 100px;
         color: $primary;
-        -webkit-animation: mainToAccentPulse 20s linear 0s infinite alternate;
-        animation: mainToAccentPulse 20s linear 0s infinite alternate;
+        -webkit-animation: mainToAccentPulse 5s ease-out 0s infinite;
+        animation: mainToAccentPulse 5s ease-out 0s infinite;
       }
       .intro-text {
         font-size: 26px;
